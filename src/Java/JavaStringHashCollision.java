@@ -11,10 +11,6 @@ public class JavaStringHashCollision {
         String c = "Aa";
         String d = "BB";
 
-        int r = 64205538 & 15;
-
-        System.out.println(r);
-
         System.out.println(a.hashCode());
         System.out.println(b.hashCode());
         System.out.println(c.hashCode());
