@@ -1,12 +1,12 @@
 package Java;
 
-import Models.Person;
+import Models.PersonEmpty;
 
 public class EmptyObject {
 
     public static void main(String[] args) {
 
-        Person sally = new Person();
+        PersonEmpty sally = new PersonEmpty();
 
         System.out.println(sally);
         System.out.println(sally.hashCode());

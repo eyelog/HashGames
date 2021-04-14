@@ -21,12 +21,13 @@ public class HashSetTest {
         set.add(new StartA(1L, "name1"));
         System.out.println(set.size());
         System.out.println("HashSet: " + set);
+        System.out.println("************************************");
 
         Iterator iterator = set.iterator();
 
         while (iterator.hasNext()){
-            System.out.println(System.identityHashCode(iterator.next()));
-//            System.out.println(iterator.next().hashCode());
+//            System.out.println(System.identityHashCode(iterator.next()));
+            System.out.println(iterator.next().hashCode());
         }
     }
 }
