@@ -18,14 +18,14 @@ public class JavaHashMapCollisionOverload {
         System.out.println("petSingleBucket: " + (System.nanoTime() - time));
         System.out.println("                                               ");
 
-        Map<PetWithEqual, String> petDefinedBucked = new HashMap<>();
+        Map<PetWithEqual, String> petSeparateBucked = new HashMap<>();
 
         for (int i = 0; i < 10000; i++) {
-            petDefinedBucked.put(new PetWithEqual(i, "Pet" + i), "Pet" + i);
+            petSeparateBucked.put(new PetWithEqual(i, "Pet" + i), "Pet" + i);
         }
 
         time = System.nanoTime();
-        System.out.println(petDefinedBucked.get(new PetWithEqual(9999, "Pet9999")));
-        System.out.println("petDefinedBucked: " + (System.nanoTime() - time));
+        System.out.println(petSeparateBucked.get(new PetWithEqual(9999, "Pet9999")));
+        System.out.println("petSeparateBucked: " + (System.nanoTime() - time));
     }
 }
